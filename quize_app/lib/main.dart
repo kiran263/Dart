@@ -228,25 +228,6 @@ class _QuizAppState extends State {
                 ),
               ),
             ),
-            /* const SizedBox(
-            height: 50,
-          ),
-          Row(
-            children: [
-              SizedBox(
-                child: ElevatedButton(
-                  onPressed: (){
-                    if(currentQuestionIndex < allQuestions[currentQuestionIndex]["correctAnswer"]){
-                      currentQuestionIndex--;
-                    }
-                  },
-                  child: const Icon(Icons.arrow_back,
-                  color: Colors.orange,
-                  ) ,
-                ),
-              )
-            ],
-          )*/
           ],
         ),
         floatingActionButton: FloatingActionButton(
