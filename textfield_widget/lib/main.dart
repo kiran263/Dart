@@ -16,7 +16,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   TextEditingController nameController = TextEditingController();
   String? myName;
-  List<String> playerList = [];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -87,19 +86,13 @@ class _MyAppState extends State<MyApp> {
             const SizedBox(
               height: 40,
             ),
-            ListView.builder(
-              itemCount: playerList.length,
-              shrinkWrap: true,
-              itemBuilder: (context, index) {
-                return Text(
-                  "name : ${playerList[index]}",
-                  style: const TextStyle(fontSize: 25),
-                );
-              },
-            )
+            Text("name :  $myName",
+            style: const TextStyle(
+              fontSize: 20
+            ),)
           ],
         ),
       ),
-    ); 
+    );
   }
 }
